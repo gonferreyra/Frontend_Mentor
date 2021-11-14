@@ -3,29 +3,70 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 15px;
-    font-family: Inter;
-    color: white;  
+    box-sizing: border-box;
 }
-.background{
-    /* background-color: hsl(233, 47%, 7%); */
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-family: "Inter";
+    color: white;
 }
+
 .card{
-    margin: 55px auto;
-    border: 1px solid black;
-    width: 320px;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    /* background-color: hsl(277, 64%, 61%); */
+    background-color: hsl(244, 38%, 16%);
+    width: 325px;
+    border-radius: 10px;
+    margin: 50px auto;
+
+}
+.card_img{
+    width: 100%;
+    margin: auto;
 }
 .card_img img{
     width: 100%;
-    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .card_heading{
+    padding: 25px 25px 10px 25px;
     text-align: center;
 }
+.card_heading p{
+    font-family: "Inter";
+    font-size: 27px;
+    font-weight: 700;
+}
 span{
+    color: hsl(277, 64%, 61%);
+}
+.card_content p{
+    padding: 2px 25px;
+    text-align: center;
+    font-family: "Inter";
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.numbers_conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+.numbers_conteiner h2{
+    padding: 0px 5px 5px 5px;
+    text-align: center;
+}
+.numbers_conteiner p{
+    text-align: center;
+    font-family: "Inter";
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+.numbers_info{
+    padding: 8px;
+}
 
+@media screen and (min-width){
+    
 }
