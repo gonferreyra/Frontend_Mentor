@@ -15,8 +15,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
     background-color: hsl(185, 75%, 39%);
 }
 .card-conteiner{

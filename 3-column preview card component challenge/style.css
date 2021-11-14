@@ -5,23 +5,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+}
 body{
+    height: 100%;
     background-color: hsl(0, 0%, 95%);
 }
 .body{
+    height: 100%;
     font-family: "Lexend Deca";
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .conteiner{
     display: flex;
     flex-direction: column;
 }
 .card{
-    /* border: 1px solid black; */
-    /* width: 80%; */
     max-width: 300px;
     padding: 35px;
-    /* height: 380px; */
 }
 .sedans{
     margin: 15px auto 0 auto;
@@ -103,8 +107,13 @@ button{
     .conteiner{
         flex-direction: row;
         justify-content: center;
-        margin-top: 100px;
+        /* margin-top: 100px; */
 
+    }
+    .body{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .card{
         height: 450px;
