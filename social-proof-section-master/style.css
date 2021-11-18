@@ -10,8 +10,63 @@ body {
     font-family: "Spartan";
     font-size: 15px;
 }
+.title{
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+    padding: 15px 20px;
+}
+.content{
+    text-align: center;
+    padding: 15px;
+    line-height: 1.8em;
+}
+.rated_card{
+    width: 95%;
+    text-align: center;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 15px;
+    /* border: 1px solid black; */
+}
+.stars{
+    padding-bottom: 12px;
+}
+.paragraph p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.card1{
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    width: 95%;
+    margin: 55px auto;
+    border-radius: 15px;
+}
+.card_img{
+    display: inline-block;
+    padding: 30px 20px;
+}
+.card_img img{
+    border-radius: 50%;
+    height: 50px;
+}
+.card_p1{
+    display: inline-block;
+}
+.card_p1 p, span{
+    position: relative;
+    top: -5px;
+    padding: 8px;
+}
+.card_content p{
+    padding: 0 20px 30px 20px;
+    line-height: 1.8em;
+}
 
-.container {
+
+
+/* .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -45,4 +100,4 @@ body {
 }
 .card3 {
     grid-area: card3;
-}
+} */
