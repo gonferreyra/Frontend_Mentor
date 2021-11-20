@@ -17,18 +17,14 @@ body{
     min-height: 100vh;
     font-weight: 700;
 }
-
-
-
-
-
 .card{
     background-color: hsl(244, 38%, 16%);
-    width: 325px;
+    /* width: 90%; */
+    max-width: 325px;
     border-radius: 10px;
     margin: 50px auto;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 
 }
 .card_img{
@@ -58,6 +54,7 @@ span{
     text-align: center;
     font-family: "Inter";
     color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
 }
 .numbers_conteiner{
     display: flex;
@@ -82,8 +79,5 @@ span{
 }
 
 @media screen and (min-width: 768px){
-    .card{
-        flex-direction: row;
-    }
 
 }
