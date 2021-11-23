@@ -7,7 +7,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
-    background-color: hsl(0, 0%, 98%);
+    /* background: linear-gradient(0deg, hsl(0, 0%, 98%), hsl(229, 6%, 66%) 80%) no-repeat; */
 }
 .heading{
     width: 85%;
@@ -25,12 +25,14 @@ body{
     font-weight: 200;
 }
 .cards{
-    width: 85%;
+    /* width: 85%; */
+    width: 330px;
     margin: auto;
 }
 .card{
     margin: 20px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* primero horizontal(0), vertical(4), blur(8), spread(0) y color */
     border-radius: 10px;
 }
 .card h2{
@@ -38,6 +40,7 @@ body{
 }
 .card p{
     padding: 0 20px;
+    font-weight: 200;
 }
 .img{
     text-align: right;
@@ -59,7 +62,43 @@ body{
 }
 @media screen and (min-width: 768px){
     .cards {
-        display: flex;
-    }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 1100px;
+        gap: 0px 40px;
+        /* grid-auto-flow: row; */
+        grid-template-areas:
+          "card1 card2 card4"
+          ". card3 .";
+      }
+      
+      .card1 { 
+          grid-area: card1;
+          transform: translate(10px, 150px);
+          /* primero el eje principal (column) y despues el decundario (row) */
+      }
+      
+      .card2 {
+          grid-area: card2;
+      }
+      
+      .card4 {
+          grid-area: card4;
+          transform: translate(10px, 150px);
+      }
+      
+      .card3 {
+          grid-area: card3;
+      }
+      /* .paragraph{
+          padding: 0 340px;
+      } */
 
+}
+
+@media only screen and (min-width: 1100px){
+    .paragraph{
+          padding: 0 340px;
+      }
 }
