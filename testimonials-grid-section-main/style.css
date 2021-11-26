@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.card {
+    border-radius: 10px;
+    width: 300px;
+    margin: 40px auto;
+}
+
+img {
+    height: 25px;
+    border-radius: 15px;
+    border-color: white;
+}
+
+.img {
+    display: inline-block;
+    padding: 20px 25px;
+}
+
+.name {
+    display: inline-block;
+}
+
+.heading {
+    padding: 0px 15px 0 25px;
+}
+
+.paragraph {
+    padding: 20px 25px;
+}
+
+.paragraph p {
+    color: rgb(163, 162, 162);
+}
+
+.name p {
+    font-weight: 600;
+}
+
+span {
+    font-weight: 500;
+    color: rgb(163, 162, 162);
+    font-size: 11px;
+}
+
+.card1 {
+    background-color: hsl(263, 55%, 52%);
+    color: rgb(238, 238, 238);
+}
+
+.card2 {
+    background-color: hsl(217, 19%, 35%);
+    color: rgb(238, 238, 238);
+}
+
+.card3 {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.card4 {
+    background-color: hsl(219, 29%, 14%);
+    color: rgb(238, 238, 238);
+}
+
+.card5 {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+@media screen and (min-width: 768px) {
+    .conteiner {
+        display: grid;
+        width: 80%;
+        height: 550px;
+        gap: 10px 10px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "card1 card1 card2 card5"
+            "card3 card4 card4 card5";
+        /* grid-template-columns: 50% 25% 25%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "card1 card2 card5"
+            "card3 card4 card5"; */
+    }
+    .card{
+        margin: 15px auto;
+    }
+
+    .card1 {
+        grid-area: card1;
+        width: 90%;
+    }
+
+    .card2 {
+        grid-area: card2;
+    }
+
+    .card3 {
+        grid-area: card3;
+        /* transform: translate(85px, 0px); */
+          /* primero el eje principal (column) y despues el decundario (row) */
+    }
+
+    .card4 {
+        grid-area: card4;
+        width: 90%;
+        /* padding: 10px 10px; */
+    }
+
+    .card5 {
+        grid-area: card5;
+        padding: 10px 18px;
+    }
+
+
+}

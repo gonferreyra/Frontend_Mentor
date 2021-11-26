@@ -11,7 +11,7 @@ body{
     /* font-family: 'Poppins', sans-serif; */
     background: url(./images/bg-mobile.svg) no-repeat;
     background-color: hsl(257, 40%, 49%);
-    color: white;
+    color: #f7f7f7;
 }
 .logo{
     padding: 30px 30px;
@@ -32,9 +32,8 @@ body{
 }
 .content p{
     padding: 20px 10px;
-    /* font-family: 'Open Sans', sans-serif; */
-    font-weight: 400;
-    color: whitesmoke;
+    color: #ececec;
+    /* line-height: 2em; */
 }
 button{
     width: 230px;
@@ -42,6 +41,11 @@ button{
     border-radius: 25px;
     background-color: white;
     color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
 }
 .icons{
     text-align: center;
@@ -49,8 +53,69 @@ button{
     color: white;
 }
 .icons img{
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    border-radius: 15px;
+    /* height: 30px;
+    margin: 5px; */
+}
+i{
     border: 1px solid white;
     border-radius: 15px;
-    height: 30px;
+    color: white;
+    padding: 5px 5px;
     margin: 5px;
+}
+i:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        display: grid;
+        justify-items: center;
+        /* align-items: center; */
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 600px;
+        /* gap: 10px; */
+        grid-template-areas: "content img";
+    }
+    body{
+        background: url(./images/bg-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+    }
+    .img{
+        align-self: center;
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    .content{
+        text-align: start;
+        margin-top: 80px;
+        padding: 010px 95px 0 0;
+    }
+    .content p{
+        padding: 20px 15px 25px 0;
+        /* line-height: 2em; */
+    }
+    .content h2{
+        font-size: 40px;
+        /* padding: 45px 0 20px 0; */
+    }
+    .icons{
+        text-align: right;
+        padding: 0;
+    }
+    .logo{
+        padding: 60px 83px 30px 83px;
+    }
+    .logo img{
+        height: 55px;
+    }
 }
