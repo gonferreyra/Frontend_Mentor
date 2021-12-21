@@ -32,8 +32,6 @@ body{
     min-height: 100vh;
     /* 100vh means that the initial body height will take 100% of the viewport height, whereas the use of min-height instead of height will let the body element grow even more if necessary. */
     /* Le decimos que como minimo el body tenga el alto del ViewPort, el ao del browser */
-    /* height: 100%; */
-    /* text-align: center; */
 }
 .image{
     /* padding: 4rem; */
@@ -101,6 +99,20 @@ h1{
 }
 .open svg{
     transform: rotate(180deg);
+}
+.bold-font p{
+    font-weight: 700;
+}
+
+.btn-bold{
+    font-weight: 700;
+}
+
+/* Active State */
+
+button p:hover{
+    color: var(--soft-red);
+    cursor: pointer;
 }
 
 /* Falta, cambiar icono cuando hago click, cambiar font-weight con click */
