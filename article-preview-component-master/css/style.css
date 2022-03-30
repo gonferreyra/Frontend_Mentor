@@ -22,9 +22,10 @@ body {
 }
 
 .card-conteiner {
-    margin: 55px 20px;
+    margin: 55px auto;
     border-radius: 10px;
     background-color: white;
+    max-width: 335px;
 }
 
 .card-img {
@@ -74,6 +75,14 @@ button {
     /* height: 42px; */
 }
 
+.btn-share img {
+    width: 36px;
+    height: 35px;
+    /* border: 1px solid gray; */
+    padding: 10px;
+    background-color: #e8e4e4;
+}
+
 .contact-1 {
     display: flex;
 }
@@ -100,12 +109,18 @@ button {
 
     .card-conteiner {
         display: flex;
-        max-width: 650px;
+        max-width: 615px;
         height: 205px;
+        margin: 150px auto;
+    }
+
+    .card-content {
+        width: 400px;
     }
 
     .card-img {
         height: auto;
+        width: 35%;
     }
 
     .card-img img {
@@ -115,7 +130,15 @@ button {
     }
 
     .card-content {
-        /* padding: 0; */
+        padding: 20px 40px 10px 38px;
+    }
+
+    .card-content p {
+        font-size: 11px;
+    }
+
+    .card-content h3 {
+        font-size: 16px;
     }
 }
 
